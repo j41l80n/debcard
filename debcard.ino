@@ -7,8 +7,11 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);
 
 
 void setup() {
+  // inicia a serial
   Serial.begin(9600);
+  //inicia comunicacao do barramento SPI
   SPI.begin();
+  //escreve na tela
   Serial.println("Aproxime o seu cartao do leitor...");
   Serial.println();
 }
